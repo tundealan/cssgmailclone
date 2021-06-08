@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gmail user  account page</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="tooltip.css">
+    <!-- Fav icon -->
+    <link rel="shortcut icon"  href="images/gmail.png">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+</head>
+<body>
+    <section class="main-head">
+        <div class="container ">
+            <div class="user-head-space flex">
+                <div class="nav-bar-icon">
+                    <p class="tooltiptext">Main menu</p>
+                    <i class="material-icons">&#xe5d2;</i>
+                </div>
+                <div class="gmail-logo">
+                    <img src="images/new-gmail-logo.png" alt="" title="Gmail">  
+                </div>
+                <div class="mail-search">
+                    <div class="ser1">
+                        <p class="tooltiptext">Search</p>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="input">
+                        <input type="search"  name="input" placeholder="Search mail" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
+                    </div>
+                    <div class="ser2">
+                        <p class="tooltiptext">show search options</p>
+                        <i class="material-icons">arrow_drop_down</i>
+                    </div>
+                </div>
+                <div class="user-other-icons">
+                    <i class="fas fa-question-circle">
+                        <p class="tooltiptext">support</p>
+                    </i>
+                    <i class="fas fa-cog">
+                        <p class="tooltiptext">settings</p>
+                    </i>
+                    <i class='fas fa-th'>
+                        <p class="tooltiptext"> Google Apps</p>
+                    </i>
+                </div>
+                <div class="user-account" id="userAccount">
+                    <div class="radius" id="radius">
+                        <p class="tooltiptext">Google Account<br>
+                            Tunde Alan<br>
+                            tundealan866@gmail.com</p>
+                    </div>
+                    <div class="user-account-list" id="userAccountList">
+                        <div class="addphoto">
+                            <i class="material-icons" title="Add a photo">add_a_photo</i>
+                        </div>
+                        <div class="user-name-email">
+                            <h4>Tunde Alan</h4>
+                            <p>tundealan866@gmail.com</p>
+                        </div>
+                        <div class="manage-your-account">
+                            <a href="">Manage your Google Account</a>
+                        </div>
+                        <div class="add-another-account">
+                            <a href=""><i class="material-icons">&#xe7f0;</i> Add another account
+                            </a>
+                        </div>
+                        <div class="sign-out">
+                            <a href="#">Sign out of all accounts</a>
+                        </div>
+                        <div class="privacy-terms-flex">
+                            <a href="#">Privacy Policy</a>
+                                     .
+                            <a href="#">Terms of Services</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Main-----head-----ends -->
+
+    <section class="mailBox">
+        <div class="mailBox-container">
+            <div class="left-transition">
+                <div class="left-transition-head">
+                    <a href="#"><i class="fas fa-plus"></i></a>
+                    <span>Compose</span> 
+                </div>
+                <div class="left-transition-list">
+                    <ul>
+                        <li class="active"><a href="#"><i class="fas fa-inbox"> inbox</i></a><p class="tooltiptext">inbox</p></li>
+                        <li><a href="#"><i class="fas fa-star"> starred</i></a><p class="tooltiptext">starred</p></li>
+                        <li><a href="#"><i class="fas fa-clock"> snoozed</i></a><p class="tooltiptext">snoozed</p></li>
+                        <li><a href="#"><i class="far fa-paper-plane"> sent</i></a><p class="tooltiptext">sent</p></li>
+                        <li><a href="#"><i class="fas fa-file"> drafts</i></a><p class="tooltiptext">drafts</p></li>
+                        <li><a href="#"><i class="fas fa-tag"> business</i></a><p class="tooltiptext">business</p></li>
+                    </ul>
+                </div>
+                <div class="left-transition-meet">
+                    <h4>Meet</h4>
+                    <a href="#"><i class="fas fa-video"> &nbsp&nbspNew meeting</i><p class="tooltiptext">new meeting</p></a>
+                    <a href="#"><i class="fas fa-keyboard">&nbsp&nbsp Join a meeting</i><p class="tooltiptext">Join a meeting</p></a>
+                </div>
+                <div class="left-transition-hangouts">
+                    <div class="hangouts-h4">
+                        <h4>hangouts</h4>
+                    </div>
+                    <div class="hangouts-radius-photo">
+                        <div class="circle-box"></div>
+                        <p>Tunde</p>
+                        <i class="fas fa-caret-down"></i>
+                        <i class="fas fa-plus"></i>                        
+                    </div>
+                </div>
+                <div class="left-transition-chat">
+                    <div class="chatbox">
+                        <h4>No recent chats</h4>
+                        <a href="#">Start a new one</a>
+                    </div>
+                    <div class="chat-icon">
+                        <i class="fas fa-user-alt"></i>
+                        <i class="fas fa-comment-dots" class="active"></i> 
+                    </div>
+                </div>
+            </div>
+            <!-- left-transition end -->
+            <div class="main-box" id="mainBox">
+                <div class="main-box-container">
+                    <div class="main-box-head" id="mainBoxHead">
+                        <div class="select">
+                            <input type="checkbox" name="selectall" id="selectAll" />
+                            <i class="fas fa-caret-down"> <p class="tooltiptext">Select</p> </i>
+                            <i class='fas fa-redo-alt'><p class="tooltiptext">refresh</p></i>
+                            <i class='fas fa-ellipsis-v'><p class="tooltiptext">more</p></i>
+                        </div>
+                        <div class="functions">
+                            <span>counters</span>
+                            <i class="fas fa-angle-left"><p class="tooltiptext">newer</p></i>
+                            <i class="fas fa-angle-right"><p class="tooltiptext">older</p></i>
+                            <i class='far fa-keyboard'><p class="tooltiptext">input tools on/off (cntrl-shift-k)</p></i>
+                            <i class="fas fa-caret-down"><p class="tooltiptext">Select input tools</p></i>
+                        </div>
+                    </div>
+                    <div class="main-box-body" id="mainBoxBody">
+                        <div class="body-head-icons">
+                            <div class="icon">
+                                <i class="fas fa-inbox active"> &nbsp&nbspPrimary</i>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-user-alt">&nbsp&nbspSocial</i>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-tag"> &nbsp&nbsp promotion</i>
+                            </div>
+                        </div>
+                        <div class="body-mailboxes">
+                            <div class="box" id="Box">
+                                <div class="visible">
+                                    <input type="checkbox" name="checkbox" id="CheckBox" />
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="hidden">
+                                    <i class="fas fa-caret-square-down"></i>
+                                    <i class="fas fa-trash"></i>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="Box">
+                                <div class="visible">
+                                    <input type="checkbox" name="checkbox" id="checkBox" />
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="hidden">
+                                    <i class="fas fa-caret-square-down"></i>
+                                    <i class="fas fa-trash"></i>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="Box">
+                                <div class="visible">
+                                    <input type="checkbox" name="checkbox" id="CheckBox" />
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="hidden">
+                                    <i class="fas fa-caret-square-down"></i>
+                                    <i class="fas fa-trash"></i>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="Box">
+                                <div class="visible">
+                                    <input type="checkbox" name="checkbox" id="CheckBox" />
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="hidden">
+                                    <i class="fas fa-caret-square-down"></i>
+                                    <i class="fas fa-trash"></i>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="Box">
+                                <div class="visible">
+                                    <input type="checkbox" name="checkbox" id="CheckBox" />
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="hidden">
+                                    <i class="fas fa-caret-square-down"></i>
+                                    <i class="fas fa-trash"></i>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="Box">
+                                <div class="visible">
+                                    <input type="checkbox" name="checkbox" id="CheckBox" />
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="hidden">
+                                    <i class="fas fa-caret-square-down"></i>
+                                    <i class="fas fa-trash"></i>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="Box">
+                                <div class="visible">
+                                    <input type="checkbox" name="checkbox" id="CheckBox" />
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="hidden">
+                                    <i class="fas fa-caret-square-down"></i>
+                                    <i class="fas fa-trash"></i>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="Box">
+                                <div class="visible">
+                                    <input type="checkbox" name="checkbox" id="CheckBox" />
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="hidden">
+                                    <i class="fas fa-caret-square-down"></i>
+                                    <i class="fas fa-trash"></i>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="Box">
+                                <div class="visible">
+                                    <input type="checkbox" name="checkbox" id="CheckBox" />
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="hidden">
+                                    <i class="fas fa-caret-square-down"></i>
+                                    <i class="fas fa-trash"></i>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="Box">
+                                <div class="visible">
+                                    <input type="checkbox" name="checkbox" id="CheckBox" />
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="hidden">
+                                    <i class="fas fa-caret-square-down"></i>
+                                    <i class="fas fa-trash"></i>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="Box">
+                                <div class="visible">
+                                    <input type="checkbox" name="checkbox" id="CheckBox" />
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="hidden">
+                                    <i class="fas fa-caret-square-down"></i>
+                                    <i class="fas fa-trash"></i>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="Box">
+                                <div class="visible">
+                                    <input type="checkbox" name="checkbox" id="CheckBox" />
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="hidden">
+                                    <i class="fas fa-caret-square-down"></i>
+                                    <i class="fas fa-trash"></i>
+                                    <i class="fas fa-envelope-open"></i>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                        <!-- footer -->
+                        <div class="footer">
+                            <div class="data-check">
+                                <p>0.62 GB (4%) of 15 GB used</p>
+                                <a href="#">Manage</a>
+                            </div>
+                            <div class="terms">
+                                <a href="#">Terms</a>
+                                <a href="#">Privacy</a>
+                                <a href="#">privacy policies</a>
+                            </div>
+                            <div class="activity">
+                                <p>Last account activity: 30 minutes ago</p>
+                                <a href="#">details</a>
+                            </div>
+                        </div>     
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <!-- main box end -->
+
+            <div class="right-transition" id="rightTransition">
+                <div class="right-transition-icons">
+                    <i class="fas fa-calendar-alt" style="color:rgb(64, 98, 10)"><p class="tooltiptext">calendar</p></i>
+                    <i class='far fa-lightbulb' style="color:yellow"><p class="tooltiptext">keep</p></i>
+                    <i class='far fa-compass' style="color:lightblue"><p class="tooltiptext">tasks</p></i>
+                    <i class='fas fa-user-circle' style="color:blue"><p class="tooltiptext">contacts</p></i>
+                    <i class='fas fa-plus' style="color:white"><p class="tooltiptext">get add ons</p></i>
+                </div>
+                <div class="hide-side-panel" id="hideSidePanel">
+                    <i class="fas fa-angle-right" id="hideIcon"><p class="tooltiptext">Hide side panel</p></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    
+    
+
+    
+    
+
+    <script src="js/main.js"></script>
+    <script src="js/jquery.multi-select.js"></script>
+    
+</body>
+</html>
+

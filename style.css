@@ -1,0 +1,751 @@
+/* Main head */
+.user-head-space{
+    width: 100%;
+    max-width: 100%;
+    height: 55%;
+    position: relative;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(255,255,255,0.30);
+    padding: 0 0 20px 0;
+    background-image:linear-gradient(to right,rgb(15, 88, 124), rgb(0, 0, 168));
+}
+
+.user-head-space > div{
+    display: inline;
+    height: 35%;
+    margin: 10px 0 0 10px;
+}
+
+.nav-bar-icon{
+    margin-top: 5px;
+}
+
+.nav-bar-icon i{
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 50px;
+    width: 45px;
+    height:45px ;
+    transition: .5s;
+}
+
+.nav-bar-icon i:hover{
+    border: 1px solid silver;
+    background-color: rgba(255,255,255,0.30);
+}
+
+.user-head-space .gmail-logo{
+    width: 75px;
+    height: 65px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 5px;
+}
+.user-head-space .gmail-logo img{
+    margin-top: 5px;
+}
+
+.user-head-space .mail-search{
+    margin-left: 60px;
+}
+
+.mail-search-input{
+    margin-top: 25px;
+}
+
+.mail-search .input input{
+    width: 650px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    outline: none;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    padding-left: 80px;
+    font-size:16px;
+}
+.mail-search input[type="search"]{
+    background:transparent;
+    transition: color .2s;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: black;
+}
+
+
+.mail-search .ser1{
+    position: absolute;
+    top:27%;
+    left: 21%;
+    border: 1px solid silver;
+    padding: 15px;
+    border-radius: 50px;
+    width: 30px;
+    height:30px ;
+    z-index: 100;
+}
+
+.mail-search .ser2{
+    position: absolute;
+    top: 10%;
+    left: 64%;
+    margin-top: 13px;
+    border: 1px solid silver;
+    padding: 15px;
+    border-radius: 50px;
+    width: 30px;
+    height:30px ;
+}
+
+.mail-search .ser2 i,
+.mail-search .ser1 i{
+    position: absolute;
+    top: -20%;
+    left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.mail-search .ser2:hover,
+.mail-search .ser1:hover{
+    background-color: rgba(255,255,255,0.30);
+    transition: .3s;
+}
+
+.mail-search .ser2 i:hover,
+.mail-search .ser1 i:hover{
+    color:black;
+}
+
+.user-other-icons {
+    position: absolute;
+    top: 0;
+    left: 85%;
+}
+
+.user-other-icons i{
+    margin-right: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.user-other-icons i:hover{
+    background-color: rgba(255,255,255,0.30);
+    transition: .3s;
+}
+
+.user-account {
+    position: absolute;
+    top: 0;
+    left: 95%;
+    margin-left: 10px;
+}
+
+.user-account .radius{
+    margin-top: 10px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    width: 40px;
+    height:40px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    background: url(images/user.jpg) no-repeat;
+}
+
+.user-account .radius:hover{
+    border: 2px solid silver;
+    transition: .3s;
+}
+/* user-account-list */
+.user-account-list a,
+.user-account-list p, 
+.user-account-list h4,
+.user-account-list i{
+    color: #333;
+}
+.addphoto{
+    margin-top: 20px;
+    height: 50px;
+}
+.user-account-list{
+    background-color:#fff;
+    height:400px;
+    width: 350px;
+    padding: 5px;
+    display: grid;
+    position: absolute;
+    margin: 0 30px 80px;
+    border-radius: 20px;
+    text-align: center;
+    transform: translateX(-95%) translateY(1%);
+    z-index: 100;
+    opacity: 0;
+    box-shadow: 2px 2px 30px gray;
+    
+}
+
+.user-account-list .manage-your-account a {
+    border: 1px solid #f0e0e0d2;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.add-another-account{
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+.add-another-account a,
+.add-another-account i
+{
+    margin-top: 20px;
+}
+.add-another-account i{
+    padding-top:5px;
+}
+
+.sign-out{
+    border-bottom: 1px solid silver;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.sign-out a{
+    border: 1px solid #f0e0e0d2;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.manage-your-account a:hover,
+.sign-out a:hover{
+    background-color:#ECF0F1;
+    transition: .5s;
+}
+
+.privacy-terms-flex{
+    margin-top: 20px;
+}
+.privacy-terms-flex a{
+    font-size: 10px;
+    text-align: center;
+}
+
+/* mailBox container */
+.mailBox{
+    background: initial;
+    width:100%;
+    height: 100vh;
+    position: relative;
+}
+
+.mailBox-container{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left-transition{
+   /* background-color: #333;*/
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 1;
+}
+
+
+
+.left-transition-head{
+    margin:40px 20px;
+    border: 1px solid #fff;
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+}
+
+.left-transition-head i{
+    font-size: 28px;
+    margin-right: 15px;
+    margin-top: 5px;
+    color:#4285F4;
+}
+
+.left-transition-head span{
+    font-size: 14px;
+    font-weight: 600;
+    vertical-align: 5px;
+    color: #080808e0;
+}
+
+
+.left-transition-list{
+    transform: translateY(-10%);
+    font-family: 'Roboto', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100px;
+}
+
+.left-transition-list li{
+    list-style: none;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 10px gray;
+    border: 1px solid  transparent;
+    width: 250px;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: transparent;
+    position: relative;
+}
+
+.left-transition-list a{
+    word-spacing: 10px;
+    margin-left: 20px;
+}
+
+.left-transition-list li:hover,
+.left-transition-list li:focus,
+.left-transition-meet a:hover{
+    background-color: rgba(255,255,255,0.30);
+}
+
+li.active{
+    border: 1px solid transparent;
+    background-color: rgba(255,255,255,0.30);
+    width: 250px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.left-transition-meet{
+    transform:translateY(-10%);
+    display: grid;
+    grid-gap: 1px;
+    font-weight: normal;
+}
+
+.left-transition-meet h4{
+    margin-left: 20px;
+}
+
+.left-transition-meet a {
+    border: 1px solid  transparent;
+    width: 250px;
+    padding: 5px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.left-transition-meet i{
+    margin-left: 20px;  
+}
+
+.left-transition-hangouts{
+    transform:translateY(20%);
+    text-transform: capitalize;
+    border-top:1px solid silver;
+    border-bottom:1px solid silver;
+    width: 272px;
+    font-size: 14px;
+    display: grid;
+    grid-gap:7px;
+}
+
+.hangouts-h4,
+.hangouts-radius-photo{
+    margin-left: 20px;
+}
+
+.hangouts-h4{
+    margin-top:7px;
+}
+
+.hangouts-radius-photo{
+    display:flex;
+    margin-bottom: 7px;
+}
+.hangouts-radius-photo .circle-box{
+    border: 1px solid silver;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: url(images/user.jpg) no-repeat;
+}
+
+.hangouts-radius-photo i,
+.hangouts-radius-photo  p{
+    transform:translateY(10%) translateX(10%);
+    display: inline;
+    margin-right: 5px;
+}
+.hangouts-radius-photo i.fas.fa-caret-down{
+    opacity:0.5;
+}
+
+.hangouts-radius-photo i.fas.fa-caret-down:hover{
+    opacity: 1.2;
+}
+.hangouts-radius-photo i.fas.fa-plus{
+    margin-left: 70px;
+    border: 1px solid transparent;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    padding: 5px;
+    transform:translateY(-10%)
+}
+
+.hangouts-radius-photo i.fas.fa-plus:hover{
+    background-color: rgba(255,255,255,0.30);
+    border: 1px solid;
+}
+
+.left-transition-chat{
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+    width: 272px;
+    margin-top: 35px;
+    display: grid;
+    grid-gap:30px;
+}
+
+.left-transition-chat h4,
+.left-transition-chat a {
+    margin-left: 50px;
+}
+
+.left-transition-chat .chatbox{
+    text-align: center;
+    font-size: 14px;
+    opacity:0.5;
+}
+
+.left-transition-chat .chat-icon{
+    border-top: 1px solid silver;
+    width: 272px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.left-transition-chat .chat-icon i{
+    margin-left: 3px;
+    opacity:0.5;
+}
+
+.fas.fa-comment-dots {
+    background-color: rgba(255,255,255,0.30);
+    border: 1px solid transparent;
+    padding: 9px;
+}
+
+/* Main box */
+.main-box{
+    width: 75%;
+    max-width: 75%;
+    background-color: inherit;
+    position: relative;
+    z-index: 10;
+}
+
+.main-box-container{
+    width: 100%;
+    height: 100%;
+    border: 1px solid silver;
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.main-box-head{
+  /*  background-color:rgb(187, 36, 36) ;*/
+    margin-top:5px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-box-head .select {
+    margin:10px 0 0 30px;
+}
+.select i .fa-caret-down{
+    border: 1px solid transparent;
+    width: 5px;
+    height: 5px;
+
+}
+.select .fa-redo-alt{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.select .fa-ellipsis-v{
+    margin-right: 30px;
+}
+
+
+.main-box-head .select i{
+    border: 1px solid transparent;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    opacity: 0.5;
+}
+
+.main-box-head .select input{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border: 1px solid silver;
+    padding: 5px;
+}
+
+.main-box-head .functions{
+    margin: 10px 10px 0 0;
+    z-index: 100;
+}
+
+.main-box-head .functions i{
+    border: 1px solid transparent;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    opacity: 0.5; 
+}
+
+.main-box-head .functions span{
+    margin-right:10px;
+    border: 1px solid transparent;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.select input:hover,
+.select i:hover,
+.functions i:hover,
+.functions span:hover{
+    background-color: rgba(255,255,255,0.30);
+    opacity: 1;
+}
+
+/* Main box body */
+.main-box-body {
+   /* background: #fff;*/
+    color: black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
+    width: 1024px;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.main-box-body a,
+.main-box-body i,
+.main-box-body p{
+    color: black;
+}
+
+.body-head-icons{
+    height: 55px;
+    border-bottom: 1px solid silver;
+    background-color: rgb(237, 243, 239);
+    font-size: 16px;
+    
+}
+
+.body-head-icons .icon{
+    display: inline;
+    margin-top: 20px;
+    text-transform: capitalize;
+    padding: 0px 10px 35px 30px;
+    width: 250px;
+    opacity: 1;
+}
+
+.body-head-icons .icon:hover{
+    background-color: rgba(255, 255, 255, 0.664);
+    opacity: 1;
+    
+}
+.body-head-icons .icon i{
+    transform: translateY(70%);
+    text-align: center;
+}
+
+.icon .active{
+    color: #c71212;
+    transform: translateY(100%);
+    opacity: 1;
+}
+
+.body-head-icons .active::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -150%;
+    width: 140%;
+    height: 3px;
+    background-color:#c71212;
+    transform: translateX(-20%);
+}
+
+.body-mailboxes{
+    position: relative;
+    background-color: rgb(237, 243, 239);
+    opacity: 0.9;
+}
+
+
+.body-mailboxes .box {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.5;
+    border-bottom: 1px solid silver;
+    height: 50px;
+    padding: 10px;
+    width: initial;
+    cursor: pointer;
+}
+
+.body-mailboxes .box i,
+.body-mailboxes .box input{
+    margin-left: 20px;
+}
+.body-mailboxes .box .hidden{
+    visibility: hidden;
+}
+.body-mailboxes .box .visible input{
+    margin-right:10px
+}
+
+.body-mailboxes .box .hidden i{
+    margin-left: 15px;
+}
+
+.body-mailboxes .box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    opacity: 1;
+}
+
+.body-mailboxes .box:hover .hidden{
+    opacity: 1;
+    visibility: visible;
+}
+/* body mailboxes footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    opacity: 0.7;
+    margin-top:10px;
+    background: rgb(122, 105, 105);
+}
+
+.footer .data-check,
+.footer .activity{
+    display: grid;
+    grid-gap:5px;
+}
+
+.footer .data-check a,
+.footer .activity a{
+    text-align: center;
+}
+.footer .data-check a:hover,
+.footer .activity a:hover,
+.footer .terms a:hover{
+    text-decoration: underline;
+}
+
+
+.footer .terms{
+    display: flex;
+    gap: 5px;
+}
+
+/* right transition */
+.right-transition{
+    display: grid;
+    grid-row-gap: 65px;
+}
+.right-transition .right-transition-icons{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    margin: 40px 0 0 15px;
+    z-index: 0;
+}
+
+.right-transition .right-transition-icons i{
+    border: 1px solid transparent;
+    width: 35px;
+    height: 35px;
+    padding:10px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.right-transition .hide-side-panel{
+    font-size: 16px;
+    margin: 40px 0 0 15px;
+}
+
+.right-transition .hide-side-panel i{
+    border: 1px solid silver;
+    width: 35px;
+    height: 35px;
+    padding:10px;
+    border-radius: 50px;
+    text-align: center;
+}
+    
+
+.right-transition .right-transition-icons i:hover,
+.right-transition .hide-side-panel i:hover
+{
+    background-color: rgba(255,255,255,0.30);
+}
+
+
+
+
+
+
+
+

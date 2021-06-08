@@ -1,0 +1,164 @@
+@media(max-width:768px){
+    .user-head-space .gmail-logo{
+        width: 35px;
+        height: 45px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .mail-search .input input{
+        width: 300px;
+        height: 50px;
+        margin-left: 25px;
+    }
+
+    .mail-search .ser1{
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 25px;
+        height:25px ;
+        border: 1px solid silver;
+        padding: 10px;
+        border-radius: 50px;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    .mail-search .ser2{
+        position: absolute;
+        top: 30%;
+        left: 34%;
+        transform: translateX(-600%);
+        margin-top: 20px;
+        border: 1px solid silver;
+        padding: 10px;
+        border-radius: 50px;
+        width: 25px;
+        height:25px ;
+    }
+
+    .mail-search .ser2 i{
+    position: absolute;
+    top: -40%;
+    left: -5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+    .user-other-icons {
+        position: absolute;
+        top: 0;
+        left: 70%;
+    }
+
+    .user-account {
+        position: absolute;
+        top: 0;
+        left: 90%;
+    }
+
+    .user-account-list{
+        background-color:#fff;
+        height:350px;
+        width: 250px;
+    }
+
+    .manage-your-account{
+        margin: 15px 0;
+    }
+
+    .left-transition{
+        max-width: 35%;
+        font-size: 14px;
+    }
+
+    .left-transition-head{
+        width: 100px;
+        height: 35px;
+    }
+
+    .left-transition-head i{
+        font-size: 18px;
+    }
+
+    .left-transition-head span{
+        font-size: 10px;
+    }
+
+    .left-transition-list li{
+        width: 120px;
+        z-index: 1;
+    }
+
+    .left-transition-meet a{
+        width: 150px;
+    }
+
+    .left-transition-hangouts{
+        width: 190px;
+    }
+
+    .left-transition-chat{
+        width: 190px;
+        font-size: 14px;
+    }
+
+    .left-transition-chat h4,
+    .left-transition-chat a {
+    margin-right: 50px;
+}
+
+    .left-transition-chat .chat-icon{
+        width: 200px;
+    }
+
+    .main-box {
+        width: 75%;
+        background-color: inherit;
+        position: relative;
+        z-index: 10;
+    }
+
+    .main-box-body{
+        width: 560px;
+    }
+
+    .footer{
+        font-size: 10px;
+    }
+
+    .right-transition .right-transition-icons,
+    .right-transition .hide-side-panel{
+        margin: 40px 15px 0 0;
+        z-index: 100;
+        font-size: 12px;
+    }
+
+    .right-transition .hide-side-panel i,
+    .right-transition .right-transition-icons i{
+        border: 1px solid transparent;
+        width: 30px;
+        height: 30px;
+        padding:10px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    
+
+
+}
+
+
+
+@media(max-width:1024px){
+    .mail-search .ser2 {
+        position: absolute;
+        top: 5%;
+        left: 78%;
+    }
+
+
+    
+}
